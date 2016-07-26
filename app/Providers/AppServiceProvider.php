@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Loker\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
