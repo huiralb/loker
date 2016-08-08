@@ -15,4 +15,4 @@ Route::get('/', function () {
     return 'Dalam Pengerjaan';
 });
 
-// Route::get('/loker', 'LokerController@index');
+Route::get('/loker', 'LokerController@index');
