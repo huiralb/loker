@@ -6,23 +6,23 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-use App\Loker\LokerFactory;
+use App\Loker\Loker;
 use App\Loker\Targets\LokerSemarang;
 use App\Loker\Targets\LokerId;
 
 class LokerController extends Controller
 {
-    protected $factory;
+    protected $loker;
 
     public function __construct()
     {
-        $this->factory = new LokerFactory;
+        $this->loker = new Loker;
     }
     public function index()
     {
         $target = new LokerId;
         
-        $this->factory->make($target);
-        return $this->factory->base();
+        $this->loker->add($target);
+        return $this->loker->getTargets();
     }
 }

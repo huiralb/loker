@@ -13,11 +13,11 @@ class LokerFactory extends Lokercreator{
         # code...
     }
 
-    public function factoryMethod(LokerInterface $product)
+    public function make(LokerInterface $product)
     {
         $this->loker = $product;
 
-        return $this->loker->getProperties();
+        return $this->loker->getBase();
     }
 
     public function base()

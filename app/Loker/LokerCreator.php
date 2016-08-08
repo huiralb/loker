@@ -5,11 +5,11 @@ use App\Loker\LokerInterface;
 
 abstract class LokerCreator{
 
-    protected abstract function factoryMethod(LokerInterface $product);
+    protected abstract function make(LokerInterface $product);
 
-    public function make($product)
+    public function create($product)
     {
-        return $this->factoryMethod($product);
+        return $this->make($product);
     }
 
 }
