@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return 'Dalam Pengerjaan';
 });
 
 // Route::get('/loker', 'LokerController@index');
