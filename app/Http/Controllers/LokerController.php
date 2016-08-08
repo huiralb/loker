@@ -8,6 +8,7 @@ use App\Http\Requests;
 
 use App\Loker\LokerFactory;
 use App\Loker\Targets\LokerSemarang;
+use App\Loker\Targets\LokerId;
 
 class LokerController extends Controller
 {
@@ -19,8 +20,9 @@ class LokerController extends Controller
     }
     public function index()
     {
-        $lokerSemarang = new LokerSemarang;
+        $target = new LokerId;
         
-        return $this->factory->make($lokerSemarang);
+        $this->factory->make($target);
+        return $this->factory->base();
     }
 }

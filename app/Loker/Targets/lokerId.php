@@ -3,13 +3,13 @@ namespace App\Loker\Targets;
 
 use App\Loker\LokerInterface;
 
-class LokerSemarang implements LokerInterface{
+class lokerId implements LokerInterface{
 
-    private $base = 'lokersemarang.com';
+    private $base = 'loker.id';
 
     public function getProperties()
     {
-        return 'Loker semarang Property';
+        return 'Loker.id Property';
     }
 
     public function getBase()
