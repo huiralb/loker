@@ -13,7 +13,7 @@
             "database"
         ],
         "psr-4": {
-            "Loker\\": "app/"
+            "App\\": "app/"
         }
     },
     "autoload-dev": {

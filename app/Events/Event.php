@@ -1,6 +1,6 @@
 <?php
 
-namespace Loker\Events;
+namespace App\Events;
 
 abstract class Event
 {
